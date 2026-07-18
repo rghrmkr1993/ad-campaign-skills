@@ -96,7 +96,7 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 - **Four worked examples at full depth** — skincare/beauty (compliance-heavy), fashion
   (benchmark-driven), film/entertainment (phase-gated), tech (B2B + consumer).
 
-## Knowledge layers (v2.1 — the AI-marketing-agent brain)
+## Knowledge layers (the AI-marketing-agent brain)
 
 | Layer | Contents | File |
 |---|---|---|
