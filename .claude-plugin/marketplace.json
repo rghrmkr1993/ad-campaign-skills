@@ -1,0 +1,52 @@
+{
+  "name": "ad-campaign-skills",
+  "owner": {
+    "name": "Raghuram K Ravi",
+    "url": "https://github.com/rghrmkr1993"
+  },
+  "metadata": {
+    "description": "Production-grade paid-media agents & skills for Claude Code — complete ad campaigns for any industry, any region, from a 4-line client brief.",
+    "version": "2.1.1"
+  },
+  "plugins": [
+    {
+      "name": "ad-campaign-director",
+      "source": "./ad-campaign-director",
+      "description": "Veteran ad-campaign director agent + ads-agency-pro skill: plans and executes complete paid-media campaigns (research → strategy → tracking → build → human-gated launch → daily optimization → daily client dashboard) across Meta, Google, YouTube, and TikTok for any industry in any region. Includes 2026 platform doctrine (Meta Andromeda/GEM, Google Power Pack), a build-any-market Geo Framework, a build-any-industry Vertical Framework, creative psychology, measurement science, and optimization algorithms.",
+      "version": "2.1.1",
+      "author": {
+        "name": "Raghuram K Ravi",
+        "url": "https://github.com/rghrmkr1993"
+      },
+      "homepage": "https://github.com/rghrmkr1993/ad-campaign-skills",
+      "repository": "https://github.com/rghrmkr1993/ad-campaign-skills",
+      "license": "MIT",
+      "category": "marketing",
+      "tags": [
+        "advertising",
+        "paid-media",
+        "campaign-management",
+        "google-ads",
+        "meta-ads",
+        "youtube-ads",
+        "tiktok-ads",
+        "media-buying",
+        "marketing-agent",
+        "client-reporting",
+        "geo-playbooks",
+        "creative-strategy",
+        "attribution",
+        "optimization"
+      ],
+      "keywords": [
+        "claude-code-skill",
+        "claude-code-agent",
+        "ads",
+        "marketing",
+        "performance-marketing",
+        "campaign-director",
+        "agency"
+      ]
+    }
+  ]
+}

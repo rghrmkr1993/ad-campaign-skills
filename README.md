@@ -124,6 +124,17 @@ project encodes **how a senior agency operator actually thinks**:
 
 ## Install
 
+**Option A — Claude Code plugin marketplace (recommended):**
+
+Run these in an interactive Claude Code session:
+
+```
+/plugin marketplace add rghrmkr1993/ad-campaign-skills
+/plugin install ad-campaign-director@ad-campaign-skills
+```
+
+**Option B — manual copy:**
+
 ```bash
 git clone https://github.com/rghrmkr1993/ad-campaign-skills.git
 cd ad-campaign-skills

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.1.1 — 2026-07-19
+
+### Added
+- **Claude Code plugin marketplace support**: `.claude-plugin/marketplace.json` (repo root)
+  and `ad-campaign-director/.claude-plugin/plugin.json`. Install is now:
+  `/plugin marketplace add rghrmkr1993/ad-campaign-skills` then
+  `/plugin install ad-campaign-director@ad-campaign-skills`.
+- README install section updated with the marketplace option.
+
 ## 2.1.0 — 2026-07-19
 
 **The AI-marketing-agent brain: five new knowledge layers + orchestrator architecture.**

@@ -1,0 +1,30 @@
+{
+  "name": "ad-campaign-director",
+  "version": "2.1.1",
+  "description": "Veteran ad-campaign director agent + ads-agency-pro skill for Claude Code. Give it a 4-line client brief (client, budget, geo, business) and it plans and executes a complete paid-media campaign across Meta, Google, YouTube, and TikTok — research, strategy, conversion tracking, paused builds, human-gated launch, daily optimization, and a daily client results dashboard. Works for any industry in any region: 2026 platform doctrine (Meta Andromeda/GEM, Google Power Pack, TikTok Smart+/GMV Max), Geo Framework with 9 regional guides + 6 worked examples, Vertical Framework with 12 industry guides + 4 worked examples, creative psychology, measurement science, and optimization decisioning.",
+  "author": {
+    "name": "Raghuram K Ravi",
+    "url": "https://github.com/rghrmkr1993"
+  },
+  "homepage": "https://github.com/rghrmkr1993/ad-campaign-skills",
+  "repository": "https://github.com/rghrmkr1993/ad-campaign-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code-skill",
+    "claude-code-agent",
+    "advertising",
+    "paid-media",
+    "google-ads",
+    "meta-ads",
+    "youtube-ads",
+    "tiktok-ads",
+    "campaign-management",
+    "media-buying",
+    "marketing-agent",
+    "agency",
+    "attribution",
+    "creative-strategy",
+    "optimization"
+  ],
+  "skills": ["./skills/"]
+}
