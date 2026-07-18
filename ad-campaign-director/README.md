@@ -1,100 +1,127 @@
-# Ad Campaign Director — Claude Code Agent + Agency Playbook Skill
+# Ad Campaign Director — Agent + Skill (Detailed Docs)
 
-A veteran paid-media **campaign director agent** and a 2026 **agency playbook skill** for
-[Claude Code](https://claude.com/claude-code). Give the agent a four-line client brief —
-client name, budget, geo, nature of business — and it plans and executes a complete paid-media
-campaign: research → strategy → tracking → build → launch (human-gated) → daily optimization →
-a daily client results dashboard.
+The flagship agent of [Ad-Campaign Skills](../README.md): a veteran paid-media **campaign
+director** for Claude Code that runs complete client campaigns on **Meta, Google, YouTube,
+and TikTok** — for **any industry, in any region of the world**.
 
-Built for agencies and freelancers running Meta (Facebook/Instagram), Google, YouTube, and
-TikTok campaigns — with deep playbooks for **India (especially South India), Sri Lanka,
-Malaysia, Singapore, the US, and the UK**, and vertical guides for **skincare/beauty,
-clothing/fashion, film/entertainment, and tech**.
+---
 
-## What's inside
+## The mental model
 
-```
-agents/
-  ad-campaign-director.md        # The agent: 30-yr-veteran persona, full workflow, hard gates
-skills/
-  ads-agency-pro/
-    SKILL.md                     # Agency OS: doctrine, quick sheets, workflow, guardrails
-    references/
-      platforms-2026.md          # Meta Andromeda, Google Power Pack, YouTube, TikTok Smart+/GMV Max
-      geo-playbooks.md           # India/South India (languages, festivals, CPM calendar), SL, MY, SG, US, UK
-      vertical-playbooks.md      # Skincare compliance, fashion benchmarks, film release arc, tech/B2B
-      client-dashboard-spec.md   # Daily client dashboard: layout, metric rules, narrative style
+Two pieces work together:
+
+| Piece | File | Role |
+|---|---|---|
+| **Agent** | `agents/ad-campaign-director.md` | WHO is working: a 30-year-veteran persona, a 6-phase engagement workflow, and hard safety gates |
+| **Skill** | `skills/ads-agency-pro/` | WHAT it knows: 2026 platform doctrine, the Geo Framework, the Vertical Framework, and the dashboard spec |
+
+```mermaid
+flowchart LR
+    A["Agent<br/><i>judgment + workflow + gates</i>"] -->|loads| S["Skill<br/><i>doctrine + frameworks + specs</i>"]
+    S --> E["Execution<br/><i>platform APIs / MCP / browser</i>"]
 ```
 
-## Highlights
+The agent's judgment is anchored in the masters — **Claude Hopkins** (advertising is
+measured salesmanship; test everything; the customer is selfish) and **David Ogilvy** (the
+hook is 80% of the ad; respect the consumer; kill campaigns on data, not boredom) — fused
+with **2026 platform reality** (creative-based retrieval, consolidated structures, signal
+quality, learning windows).
 
-- **2026 doctrine:** creative-is-the-targeting (Meta Andromeda entity-ID mechanics), Google
-  Power Pack budget splits (PMax / AI Max / Demand Gen), YouTube Shorts + CTV strategy,
-  TikTok Smart+ and GMV Max.
-- **South Asia expertise rarely found in public playbooks:** Tamil/Telugu/Kannada/Malayalam
-  language strategy, festival CPM calendar (Pongal → Onam → Diwali), UPI/COD commerce
-  mechanics, the Tamil diaspora chain (TN → SL/MY/SG → UK/US), and the hard fact that
-  **TikTok is banned in India** (bake it into your media plans).
-- **Compliance built in:** ASCI (India) influencer/claims rules, Meta before/after policies,
-  UK ASA/CAP beauty rules, GDPR/DPDP/PDPA lead-form notes.
-- **Human-gated spend:** the agent never activates campaigns, raises budgets, or touches
-  billing without explicit approval. Everything builds in PAUSED state first.
-- **Honest reporting doctrine:** misses reported as misses; the dashboard spec supports both
-  full-transparency and fixed-fee reporting models — **the client contract always wins**.
+## The 6-phase workflow
+
+| Phase | What happens | Spend? |
+|---|---|---|
+| 0 — Research | Client footprint, competitor ad libraries (Meta Ads Library, Google Transparency Center), geo playbook via the Geo Framework, vertical playbook via the Vertical Framework, strategy brief with benchmark-cited targets | No |
+| 1 — Measurement | Pixel + Conversions API, Google tag + enhanced conversions, GA4, feed health. Test events verified end-to-end. **No tracking = no launch** | No |
+| 2 — Build | Campaign structures (consolidated, broad, language-split), 10-15 creative concepts, compliance pass for regulated verticals. **Everything created PAUSED** | No |
+| 3 — Launch gate | Launch summary presented: structure, daily budgets, flight dates, creatives, targets. Activates only on explicit approval | 🔒 Gated |
+| 4 — Run & optimize | Daily results pull + dashboard update; scale winners +20-30% steps; kill losing *concepts* (not variations); 25-30% creative refresh every 2 weeks; no panic moves inside the 7-10 day learning window | Yes (approved) |
+| 5 — Report | Daily client dashboard + weekly 5-part narrative report (90-second executive summary → KPI scorecard → cause-and-effect → insights → next actions) | — |
+
+## What the skill contains
+
+### 1. Core doctrine (7 rules)
+Creative is the targeting • concepts not variations • consolidate structure • broad beats
+narrow • signal quality is the moat • video-first • patience windows.
+
+### 2. Platform playbooks (`references/platforms-2026.md`)
+- **Meta:** Andromeda mechanics (creative-based ad retrieval, Entity-ID collapse),
+  Advantage+ Shopping as primary, EMQ ≥ 7, fatigue math.
+- **Google:** the Power Pack — Performance Max + AI Max for Search + Demand Gen with budget
+  splits per business type, Demand Gen's four official best-practice pillars.
+- **YouTube:** three surfaces (in-stream / Shorts / CTV) with per-surface creative rules
+  and CPM bands.
+- **TikTok:** Smart+ automation, GMV Max for TikTok Shop, live shopping, per-geo
+  availability checks.
+
+### 3. The Geo Framework (`references/geo-playbooks.md`)
+Seven questions that turn any market into a playbook: platform availability & bans •
+language map • payment & commerce mechanics • seasonal calendar • privacy/compliance • CPM
+tier & testing strategy • creator ecosystem.
+
+Plus **nine regional quick guides** (North America, Latin America, Europe, Middle East &
+GCC, Africa, South Asia, Southeast Asia, East Asia, Oceania) and **six worked examples**
+built to full depth (India/South India, Sri Lanka, Malaysia, Singapore, US, UK).
+
+### 4. The Vertical Framework (`references/vertical-playbooks.md`)
+Six questions that turn any industry into a playbook: regulatory & claims status • purchase
+cycle & unit economics • creative codes • benchmark bands • measurement model • seasonality.
+
+Plus **twelve industry quick guides** (F&B, health & wellness, finance, real estate,
+education, travel, automotive, gaming/apps, B2B/SaaS, local services, luxury, electronics)
+and **four worked examples** built to full depth (skincare/beauty, fashion,
+film/entertainment, tech).
+
+### 5. Dashboard spec (`references/client-dashboard-spec.md`)
+A daily client dashboard designed around the 5-second rule (*is it working?* answered
+instantly): hero verdict tiles, trend charts titled as findings, funnel, creative
+leaderboard, geo/language splits, and a "what we did / what's next" narrative. Supports
+both reporting models — results-focused (fixed-fee contracts) and full-transparency
+(pass-through media) — **the contract always wins**, and the operator always keeps a full
+internal economics view.
 
 ## Install
 
-Copy into your Claude Code user directory:
+See the [root README](../README.md#install). Short version: copy
+`agents/ad-campaign-director.md` to `~/.claude/agents/` and `skills/ads-agency-pro/` to
+`~/.claude/skills/`, then restart your Claude Code session.
 
-```bash
-# agent
-cp agents/ad-campaign-director.md ~/.claude/agents/
-
-# skill
-cp -r skills/ads-agency-pro ~/.claude/skills/
-```
-
-(Windows: `%USERPROFILE%\.claude\agents\` and `%USERPROFILE%\.claude\skills\`.)
-
-Optional but recommended companions:
-- [claude-ads](https://github.com/AgriciDaniel/claude-ads) — structured audits + gated account ops across 12 platforms
-- A Meta Ads MCP connector for direct API access
-- Marketing skill packs (copywriting, CRO, analytics)
-
-## Use
-
-Start a Claude Code session and give it a brief:
+## Usage examples
 
 ```
 Run ads for: GlowLeaf Skincare • ₹1.5L/month • Tamil Nadu + Kerala • ayurvedic skincare D2C
+Run ads for: Bytewise • $8k/month • US + UK • B2B SaaS, dev-tools
+Run ads for: Casa Bonita • R$20k/month • São Paulo • home-decor e-commerce
+Run ads for: Almasa Dates • AED 30k/month • UAE + KSA • premium gifting F&B
+Run ads for: Kiwi Trails • NZ$12k/month • Australia + NZ • adventure travel bookings
 ```
 
-The agent researches, plans, builds paused campaigns, and asks for one explicit approval
-before any money moves. During live flights, schedule a daily run:
+What you'll see: a strategy brief with assumptions stated → tracking verification → paused
+campaign builds → ONE approval request → then daily operation.
+
+During live flights:
 
 ```
-daily update for GlowLeaf
+daily update for <client>     # refreshes dashboard, flags anomalies
+weekly report for <client>    # 5-part narrative report
 ```
 
-…and it refreshes the client dashboard and flags anomalies.
+## FAQ
 
-## Customize
+**Does it spend money on its own?** No. Everything is built paused. Activation, budget
+raises, and fund additions each require explicit approval with a presented diff.
 
-1. Fill in the **account registry** table in `skills/ads-agency-pro/SKILL.md` with your own
-   ad accounts.
-2. Adjust geo/vertical files for your markets — the structure is meant to be forked.
-3. Platform numbers are research-dated **July 2026**; algorithms drift — refresh
-   `platforms-2026.md` periodically.
+**Which platforms does it need?** It works with whatever you have: Meta via MCP/API,
+Google via browser automation or API, TikTok via browser. More connectors = less browser
+driving.
 
-## Disclaimers
+**My market/industry isn't in the examples.** That's the point of v2.0 — run the 7-question
+Geo Framework and 6-question Vertical Framework; the worked examples show the depth to aim
+for.
 
-- Not affiliated with Meta, Google, TikTok, or any platform. Platform policies and benchmark
-  figures change — verify against official documentation before spending real money.
-- Nothing here is financial, legal, or compliance advice. Regulated-category advertisers
-  (health claims, finance, etc.) should get professional review.
-- You are responsible for how campaigns run in your accounts. The agent's hard gates help,
-  but the human approving the spend owns the outcome.
+**Are the benchmarks guaranteed?** No — they're research-dated (July 2026) category medians
+for expectation-setting. Your account's data supersedes them within weeks.
 
-## License
-
-MIT — see [LICENSE](LICENSE).
+**Can I use this for restricted categories (finance, health, housing)?** Yes, but the
+frameworks will force compliance checks, and you should get professional review — platform
+special-category rules and local law apply to you, not to this repo.

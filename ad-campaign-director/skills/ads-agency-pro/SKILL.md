@@ -1,22 +1,40 @@
 ---
 name: ads-agency-pro
-description: Advanced paid-media agency playbook for running client ad campaigns on Meta (Facebook/Instagram), Google, YouTube, and TikTok for tech, skincare/beauty, film/entertainment, and clothing/fashion clients across India (especially South India), Sri Lanka, Malaysia, Singapore, US, and UK. Use for ANY client campaign work — strategy, media planning, audits, campaign builds, budgets, creative strategy, benchmarks, geo/vertical questions, or platform best practices. Layers 2026 platform doctrine (Meta Andromeda, Google Power Pack, TikTok Smart+/GMV Max), regional playbooks, and vertical compliance.
+description: Advanced paid-media agency playbook for running client ad campaigns on Meta (Facebook/Instagram), Google, YouTube, and TikTok — for ANY industry in ANY region of the world. Use for ANY client campaign work — strategy, media planning, audits, campaign builds, budgets, creative strategy, benchmarks, geo/vertical questions, or platform best practices. Contains 2026 platform doctrine (Meta Andromeda, Google Power Pack, TikTok Smart+/GMV Max), a build-any-market geo framework with regional guides for every world region, a build-any-industry vertical framework with 12+ industry guides, and a client dashboard/reporting spec.
 ---
 
 # Ads Agency Pro — 2026 Client Campaign Playbook
 
-Agency operating system for running paid media for clients. This skill is the
-**strategy + regional + vertical layer**. It pairs well with:
+Agency operating system for running paid media for clients — **any region, any industry**.
+This skill is the **strategy + regional + vertical layer**. It pairs well with:
 
 - **`ads` skill ([claude-ads plugin](https://github.com/AgriciDaniel/claude-ads))** — optional
   but recommended: structured audits, deterministic scoring, JSON reports, capability-gated
-  account changes. Use it for the mechanics; use THIS skill for what to actually do in these
-  markets and verticals.
+  account changes. Use it for the mechanics; use THIS skill for what to do in your markets
+  and verticals.
 - **Meta Ads MCP tools** (`ads_*`) if connected — direct API access to campaigns, ad sets,
   creatives, audiences, insights, A/B and lift tests.
 - **Browser automation** — Google Ads, YouTube Studio, GA4, TikTok Ads Manager.
-- **Your creative stack** — AI video/UGC generation skills, Canva MCP, ad-copy skills,
-  landing-page skills.
+- **Your creative stack** — AI video/UGC generation, Canva or equivalent, copywriting
+  skills, landing-page skills.
+
+## How the layers fit
+
+```
+Client brief (who, budget, where, what business)
+        │
+        ▼
+┌─ ads-agency-pro (this skill) ──────────────────────────────┐
+│  1. Core doctrine        — platform-agnostic 2026 rules    │
+│  2. Platform playbooks   — Meta / Google / YouTube / TikTok│
+│  3. Geo framework        — build a playbook for ANY market │
+│  4. Vertical framework   — build one for ANY industry      │
+│  5. Dashboard spec       — client reporting that retains   │
+└────────────────────────────────────────────────────────────┘
+        │
+        ▼
+Execution: platform APIs/MCP + browser + creative tooling
+```
 
 ## Account registry (maintain your own — TEMPLATE)
 
@@ -26,9 +44,9 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 |---|---|---|---|
 | Google Ads | `XXX-XXX-XXXX` | `your-ads-login@example.com` | Billing model, tax status |
 | Meta | Business Manager + ad account per client | — | Never run client work on a personal ad account. Pixel + CAPI per client. |
-| TikTok | Per-client | — | **India: TikTok is BANNED (since 2020, still banned 2026). Never plan TikTok for India geos.** |
+| TikTok | Per-client | — | Check availability per geo (e.g., **banned in India**). |
 
-## 2026 core doctrine (applies to every campaign)
+## 2026 core doctrine (applies to every campaign, everywhere)
 
 1. **Creative is the targeting.** Meta Andromeda and TikTok Smart+ retrieve ads by creative
    signal, not audience settings. Budget creative volume before budgeting media: 10-15
@@ -38,7 +56,7 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 3. **Consolidate structure.** 1-3 ad sets per campaign max. Advantage+ Shopping / PMax as
    workhorses. Fragmented structures starve the learning phase.
 4. **Broad beats narrow.** Lookalikes and interest stacks are legacy. Go broad + let creative
-   segment. Exception: genuine niche B2B and film fan-bases.
+   segment. Exceptions: genuine niche B2B and fan-base entertainment marketing.
 5. **Signal quality is the moat.** Pixel + CAPI together, Event Match Quality ≥ 7, GA4 +
    enhanced conversions on Google, offline conversion import for lead-gen. No launch without
    conversion tracking verified end-to-end.
@@ -55,27 +73,28 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 | Meta | Andromeda era: A+SC primary, creative volume, EMQ ≥ 7 | [references/platforms-2026.md](references/platforms-2026.md) |
 | Google | Power Pack: PMax (50-60% ecom budget) + AI Max Search (30-40%) + Demand Gen (10-20%) | same |
 | YouTube | Shorts ≥ 20-30% of YT spend for <35 audiences; CTV for premium brand | same |
-| TikTok | Smart+ for web, GMV Max default for TikTok Shop; SEA CPMs $1-5 | same |
+| TikTok | Smart+ for web, GMV Max default for TikTok Shop; check per-geo availability | same |
 
-## Geo quick sheet
+## Geo coverage — any market
 
-| Market | Platform mix | Key facts | Detail |
-|---|---|---|---|
-| India / South India | Meta + Google + YT (NO TikTok) | Regional language creative outperforms English for tier-2/3; 73% consume regional content; UPI + COD; festival CPM spikes | [references/geo-playbooks.md](references/geo-playbooks.md) |
-| Sri Lanka | Facebook-first (9M users) + YT (8.8M) | FB = the internet for mass market; WhatsApp/IG social commerce >25% of online sales | same |
-| Malaysia | Meta + TikTok Shop + Google | Bahasa/English/Chinese/Tamil; Raya mega-season; Touch 'n Go | same |
-| Singapore | Meta + Google + TikTok | Premium CPMs, 98% penetration, English-first, PDPA | same |
-| US | Meta + Google/YT + TikTok | Highest CPMs, CTV big, state privacy laws | same |
-| UK | Meta + Google/YT + TikTok | ASA/CAP code (strict on beauty claims), GDPR | same |
+[references/geo-playbooks.md](references/geo-playbooks.md) contains:
+- **The 7-question Geo Framework** — build a playbook for any market: platform availability
+  & bans, language map, payment/commerce mechanics, seasonal calendar, privacy/compliance,
+  CPM tier, creator ecosystem.
+- **Regional quick guides** — North America, Latin America, Europe, Middle East & GCC,
+  Africa, South Asia, Southeast Asia, East Asia, Oceania.
+- **Six worked examples at full depth** — India/South India, Sri Lanka, Malaysia, Singapore,
+  US, UK — templates for the depth every active market deserves.
 
-## Vertical quick sheet
+## Vertical coverage — any industry
 
-| Vertical | Core play | Compliance hot zone | Detail |
-|---|---|---|---|
-| Skincare/beauty | UGC + A+SC; "helps/visibly reduces" language | ASCI (India), Meta before/after rules, no treatment claims | [references/vertical-playbooks.md](references/vertical-playbooks.md) |
-| Clothing/fashion | 70% catalog (A+SC) / 30% hero drops; 21+ creatives/month | Sizing/returns clarity; median ROAS 2.18x, top-10% 6.0x | same |
-| Film/entertainment | Music-first, meme + creator seeding, phase-gated | Certification marks (India), spoiler windows | same |
-| Tech/B2B | Search intent + Demand Gen; offline conversion feedback | Data claims, GDPR/DPDP for lead forms | same |
+[references/vertical-playbooks.md](references/vertical-playbooks.md) contains:
+- **The 6-question Vertical Framework** — regulatory/claims status, purchase cycle & unit
+  economics, creative codes, benchmark bands, measurement model, seasonality.
+- **12 industry quick guides** — F&B, health & wellness, finance, real estate, education,
+  travel, automotive, gaming/apps, B2B/SaaS, local services, luxury/jewelry, electronics.
+- **Four worked examples at full depth** — skincare/beauty (compliance-heavy), fashion
+  (benchmark-driven), film/entertainment (phase-gated), tech (B2B + consumer).
 
 ## Standard engagement workflow (new client)
 
@@ -90,8 +109,8 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 4. **Structure** — per doctrine above. One prospecting (broad) + one retargeting + optional
    test campaign per platform. Name convention: `{CLIENT}-{GEO}-{OBJ}-{YYYYMM}`.
 5. **Creative sprint** — 10-15 concepts across angles (problem, desire, social proof, founder,
-   demo, UGC, meme where fit). Localize per language market — separate ad groups/ad sets per
-   language, never mixed.
+   demo, UGC, meme where fit). Localize per language market — separate ad sets per language,
+   never mixed.
 6. **Launch small, scale on signal** — 7-10 day learning window, then scale winners 20-30%
    per step; kill losers at concept level, not variation level.
 7. **Report** — weekly: spend, ROAS/CPA vs target, creative leaderboard, next tests.
@@ -101,11 +120,11 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 ## Guardrails
 
 - Never launch, edit budgets, or change live campaigns without explicit owner approval.
-- Never plan TikTok spend for India. Redirect that budget to Reels + Shorts (+ Moj/ShareChat
-  via managed buys for deep tier-2/3 regional reach).
-- Festival calendars drive CPM inflation in India (Diwali window CPMs can run 2-3x) — book
-  creative and lock budgets 4-6 weeks ahead.
-- Every regulated-vertical ad (skincare claims, finance, health) passes the compliance checks
-  in [references/vertical-playbooks.md](references/vertical-playbooks.md) before submission.
-- Currency/billing: Indian accounts commonly run prepaid (UPI) with GST invoicing — check the
-  billing threshold model per market before launch week.
+- Verify platform availability per geo before planning (bans/restrictions move).
+- Seasonal peaks inflate CPMs (up to 2-3x at the biggest events) — book creative and lock
+  budgets 4-6 weeks ahead; never start a learning phase inside a peak.
+- Every regulated-vertical ad (health claims, finance, housing, etc.) passes the compliance
+  checks in [references/vertical-playbooks.md](references/vertical-playbooks.md) before
+  submission.
+- Check the billing model (prepaid vs postpaid, tax registration) per account/market before
+  launch week.

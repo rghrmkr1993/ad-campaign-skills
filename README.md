@@ -1,34 +1,202 @@
-# Claude Agents
+# Ad-Campaign Skills
 
-Production-grade agents and skills for [Claude Code](https://claude.com/claude-code) —
-built from real agency and client work, released for anyone to use and fork.
+**Production-grade paid-media agents & skills for [Claude Code](https://claude.com/claude-code)
+— any region, any industry.**
 
-## Agents
+Give the flagship agent a four-line client brief — *client name, budget, location, nature of
+business* — and it plans and executes a complete ad campaign across **Meta (Facebook +
+Instagram), Google, YouTube, and TikTok**: research → strategy → conversion tracking →
+campaign build → human-approved launch → daily optimization → a daily client results
+dashboard.
 
-| Agent | What it does |
-|---|---|
-| [ad-campaign-director](ad-campaign-director/) | Veteran paid-media campaign director: give it a 4-line client brief (client, budget, geo, business) and it runs a complete campaign — research → strategy → tracking → build → human-gated launch → daily optimization → daily client results dashboard. Ships with the `ads-agency-pro` skill: 2026 platform doctrine (Meta Andromeda, Google Power Pack, TikTok Smart+/GMV Max), geo playbooks for India/South India, Sri Lanka, Malaysia, Singapore, US, UK, and vertical playbooks for skincare, fashion, film, and tech. |
+Built from real agency work, generalized for the world, released under MIT.
 
-*More agents coming.*
+> **Version 2.0** — global geo framework (every world region), any-industry vertical
+> framework (12+ industries), architecture docs. See [CHANGELOG.md](CHANGELOG.md).
+
+---
+
+## Architecture
+
+```mermaid
+flowchart TB
+    subgraph INPUT["📥 Operator input"]
+        BRIEF["Client brief<br/>name • budget • geo • business"]
+        APPROVE["Approvals<br/>(launch, budget changes)"]
+    end
+
+    subgraph AGENT["🎯 ad-campaign-director (agent)"]
+        PERSONA["Veteran persona<br/>Hopkins • Ogilvy • 2026 doctrine"]
+        WORKFLOW["6-phase engagement workflow"]
+        GATES["🔒 Hard gates<br/>no spend without approval<br/>no billing/payment access<br/>compliance pass required"]
+    end
+
+    subgraph SKILL["📚 ads-agency-pro (skill)"]
+        DOCTRINE["Core doctrine<br/>7 platform-agnostic rules"]
+        PLATFORMS["Platform playbooks<br/>Meta Andromeda • Google Power Pack<br/>YouTube • TikTok Smart+/GMV Max"]
+        GEO["Geo Framework<br/>7 questions → any market<br/>+ 9 regional guides + 6 worked examples"]
+        VERTICAL["Vertical Framework<br/>6 questions → any industry<br/>+ 12 industry guides + 4 worked examples"]
+        DASH["Dashboard spec<br/>daily client reporting"]
+    end
+
+    subgraph EXEC["⚙️ Execution surfaces"]
+        META["Meta Ads<br/>(API / MCP)"]
+        GOOGLE["Google Ads + YouTube<br/>(browser / API)"]
+        TIKTOK["TikTok Ads<br/>(where available)"]
+        CREATIVE["Creative tooling<br/>AI video/UGC • Canva • copy"]
+    end
+
+    subgraph OUT["📤 Outputs"]
+        CAMPAIGNS["Live campaigns<br/>(built paused, launched on approval)"]
+        DASHBOARD["Daily client dashboard<br/>(results-focused, stable URL)"]
+        REPORTS["Weekly narrative reports<br/>+ internal economics view"]
+    end
+
+    BRIEF --> AGENT
+    APPROVE --> GATES
+    AGENT --> SKILL
+    SKILL --> EXEC
+    EXEC --> OUT
+    PERSONA -.-> WORKFLOW -.-> GATES
+```
+
+### How a campaign actually runs
+
+```mermaid
+flowchart LR
+    P0["Phase 0<br/>Research<br/><i>client, competitors,<br/>geo + vertical playbooks</i>"]
+    P1["Phase 1<br/>Measurement<br/><i>pixel + CAPI, GA4,<br/>verify before spend</i>"]
+    P2["Phase 2<br/>Build<br/><i>campaigns + creatives,<br/>ALL PAUSED</i>"]
+    GATE{"🔒 Launch gate<br/><i>human approves<br/>budget & plan</i>"}
+    P4["Phase 4<br/>Run & optimize<br/><i>daily results pull,<br/>scale/kill by concept</i>"]
+    P5["Phase 5<br/>Report<br/><i>daily dashboard +<br/>weekly narrative</i>"]
+
+    P0 --> P1 --> P2 --> GATE
+    GATE -->|"approved"| P4 --> P5
+    P5 -->|"compound learnings"| P4
+```
+
+---
+
+## What's inside
+
+```
+ad-campaign-director/
+├── README.md                        # Detailed agent docs: install, usage, examples
+├── agents/
+│   └── ad-campaign-director.md      # The agent: persona, workflow, hard gates
+└── skills/
+    └── ads-agency-pro/
+        ├── SKILL.md                 # Agency OS: doctrine, quick sheets, workflow, guardrails
+        └── references/
+            ├── platforms-2026.md            # Meta Andromeda, Google Power Pack, YouTube, TikTok
+            ├── geo-playbooks.md             # Geo Framework + all world regions + 6 worked examples
+            ├── vertical-playbooks.md        # Vertical Framework + 12 industries + 4 worked examples
+            └── client-dashboard-spec.md     # Daily client dashboard: layout, metrics, narrative
+```
+
+## Why this exists
+
+Most "AI marketing" tooling either writes generic copy or dumps platform docs on you. This
+project encodes **how a senior agency operator actually thinks**:
+
+- **Creative is the targeting now.** Meta's Andromeda and TikTok's Smart+ retrieve ads by
+  creative signal. The playbooks force concept diversity (10-15 distinct concepts per
+  campaign) instead of audience micro-management.
+- **Frameworks over lists.** You don't get six markets — you get a 7-question framework that
+  builds a playbook for ANY market, with nine regional guides and six full worked examples
+  showing the target depth. Same for industries: a 6-question framework, 12 quick guides,
+  four deep examples.
+- **Money is gated.** The agent builds everything paused and cannot activate spend, raise
+  budgets, or touch billing without explicit human approval. Ever.
+- **Honest reporting is doctrine.** Misses get reported as misses, with cause and corrective
+  action. Dashboards lead with the question the client actually has: *is it working?*
 
 ## Install
 
-Each agent folder has its own README with install steps. General pattern:
-
 ```bash
-cp <agent>/agents/*.md ~/.claude/agents/
-cp -r <agent>/skills/* ~/.claude/skills/
+git clone https://github.com/rghrmkr1993/ad-campaign-skills.git
+cd ad-campaign-skills
+
+# agent
+cp ad-campaign-director/agents/ad-campaign-director.md ~/.claude/agents/
+
+# skill
+cp -r ad-campaign-director/skills/ads-agency-pro ~/.claude/skills/
 ```
 
-(Windows: `%USERPROFILE%\.claude\agents\` and `%USERPROFILE%\.claude\skills\`.)
+Windows (PowerShell):
 
-## Design principles
+```powershell
+Copy-Item ad-campaign-director\agents\ad-campaign-director.md "$env:USERPROFILE\.claude\agents\"
+Copy-Item -Recurse ad-campaign-director\skills\ads-agency-pro "$env:USERPROFILE\.claude\skills\"
+```
 
-- **Human-gated actions:** agents never spend money, publish, or mutate accounts without
-  explicit approval.
-- **Evidence over vibes:** benchmarks cited, platform mechanics dated, honest reporting
-  doctrine (misses reported as misses).
-- **Fork-friendly:** playbooks are structured to be edited for your markets and clients.
+Restart your Claude Code session; the agent and skill register automatically.
+
+**Optional companions** (recommended for full power):
+- [claude-ads](https://github.com/AgriciDaniel/claude-ads) — structured audits + gated account ops across 12 platforms
+- A Meta Ads MCP connector — direct API access instead of browser automation
+- Marketing skill packs (copywriting, CRO, analytics)
+
+## Usage
+
+Any region, any industry — the same four-line brief:
+
+```
+Run ads for: GlowLeaf Skincare • ₹1.5L/month • Tamil Nadu + Kerala • ayurvedic skincare D2C
+Run ads for: Bytewise • $8k/month • US + UK • B2B SaaS, dev-tools
+Run ads for: Casa Bonita • R$20k/month • São Paulo • home-decor e-commerce
+Run ads for: Almasa Dates • AED 30k/month • UAE + KSA • premium gifting F&B
+```
+
+The agent researches, plans, builds paused campaigns, and asks for **one explicit approval**
+before any money moves. During live flights, schedule a daily run:
+
+```
+daily update for GlowLeaf
+```
+
+…and it refreshes the client dashboard and flags anomalies.
+
+## Customize
+
+1. Fill in the **account registry** in `skills/ads-agency-pro/SKILL.md` with your own accounts.
+2. Run the **Geo Framework** (7 questions) for your active markets; the six worked examples
+   show the target depth.
+3. Run the **Vertical Framework** (6 questions) for your client industries.
+4. Platform mechanics are research-dated **July 2026** — algorithms drift; refresh
+   `platforms-2026.md` periodically.
+
+## Safety design
+
+| Gate | Behavior |
+|---|---|
+| Spend | Everything is built PAUSED; activation, budget raises, and fund additions require explicit human approval with a presented diff |
+| Payments | The agent never enters payment credentials or touches billing/tax fields |
+| Platform availability | Verified per geo every planning cycle (e.g., TikTok is banned in India) |
+| Compliance | Regulated verticals (health claims, finance, housing…) pass a claims checklist before every creative upload |
+| Reporting | The operator always sees full economics; client dashboards follow the contract |
+
+## Versioning
+
+Semantic-ish: **2.0.0** current. See [CHANGELOG.md](CHANGELOG.md). More agents will land in
+this repo as sibling folders.
+
+## Contributing
+
+Issues and PRs welcome — especially: updated platform mechanics, new worked-example markets
+and verticals, benchmark refreshes, and translations of creative-code notes. Keep the
+structure: framework first, quick guides second, worked examples third.
+
+## Disclaimers
+
+- Not affiliated with Meta, Google, TikTok, or any platform. Platform policies and benchmark
+  figures change — verify against official documentation before spending real money.
+- Nothing here is financial, legal, or compliance advice. Regulated-category advertisers
+  should get professional review.
+- You are responsible for how campaigns run in your accounts. The agent's hard gates help,
+  but the human approving the spend owns the outcome.
 
 ## License
 
