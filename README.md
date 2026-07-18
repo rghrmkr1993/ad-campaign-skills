@@ -20,36 +20,36 @@ Built from real agency work, generalized for the world, released under MIT.
 
 ```mermaid
 flowchart TB
-    subgraph INPUT["📥 Operator input"]
-        BRIEF["Client brief<br/>name • budget • geo • business"]
-        APPROVE["Approvals<br/>(launch, budget changes)"]
+    subgraph INPUT["Operator input"]
+        BRIEF["Client brief:<br/>name, budget, geo, business"]
+        APPROVE["Approvals:<br/>launch and budget changes"]
     end
 
-    subgraph AGENT["🎯 ad-campaign-director (agent)"]
-        PERSONA["Veteran persona<br/>Hopkins • Ogilvy • 2026 doctrine"]
-        WORKFLOW["6-phase engagement workflow"]
-        GATES["🔒 Hard gates<br/>no spend without approval<br/>no billing/payment access<br/>compliance pass required"]
+    subgraph AGENT["ad-campaign-director agent"]
+        PERSONA["Veteran persona:<br/>Hopkins, Ogilvy, 2026 doctrine"]
+        WORKFLOW["Six-phase engagement workflow"]
+        GATES["Hard gates:<br/>no spend without approval,<br/>no billing access,<br/>compliance pass required"]
     end
 
-    subgraph SKILL["📚 ads-agency-pro (skill)"]
-        DOCTRINE["Core doctrine<br/>7 platform-agnostic rules"]
-        PLATFORMS["Platform playbooks<br/>Meta Andromeda • Google Power Pack<br/>YouTube • TikTok Smart+/GMV Max"]
-        GEO["Geo Framework<br/>7 questions → any market<br/>+ 9 regional guides + 6 worked examples"]
-        VERTICAL["Vertical Framework<br/>6 questions → any industry<br/>+ 12 industry guides + 4 worked examples"]
-        DASH["Dashboard spec<br/>daily client reporting"]
+    subgraph SKILL["ads-agency-pro skill"]
+        DOCTRINE["Core doctrine:<br/>7 platform-agnostic rules"]
+        PLATFORMS["Platform playbooks:<br/>Meta Andromeda, Google Power Pack,<br/>YouTube, TikTok Smart+ and GMV Max"]
+        GEO["Geo Framework:<br/>7 questions for any market,<br/>9 regional guides, 6 worked examples"]
+        VERTICAL["Vertical Framework:<br/>6 questions for any industry,<br/>12 industry guides, 4 worked examples"]
+        DASH["Dashboard spec:<br/>daily client reporting"]
     end
 
-    subgraph EXEC["⚙️ Execution surfaces"]
-        META["Meta Ads<br/>(API / MCP)"]
-        GOOGLE["Google Ads + YouTube<br/>(browser / API)"]
-        TIKTOK["TikTok Ads<br/>(where available)"]
-        CREATIVE["Creative tooling<br/>AI video/UGC • Canva • copy"]
+    subgraph EXEC["Execution surfaces"]
+        META["Meta Ads<br/>API or MCP"]
+        GOOGLE["Google Ads and YouTube<br/>browser or API"]
+        TIKTOK["TikTok Ads<br/>where available"]
+        CREATIVE["Creative tooling:<br/>AI video, UGC, Canva, copy"]
     end
 
-    subgraph OUT["📤 Outputs"]
-        CAMPAIGNS["Live campaigns<br/>(built paused, launched on approval)"]
-        DASHBOARD["Daily client dashboard<br/>(results-focused, stable URL)"]
-        REPORTS["Weekly narrative reports<br/>+ internal economics view"]
+    subgraph OUT["Outputs"]
+        CAMPAIGNS["Live campaigns:<br/>built paused, launched on approval"]
+        DASHBOARD["Daily client dashboard:<br/>results-focused, stable URL"]
+        REPORTS["Weekly narrative reports<br/>plus internal economics view"]
     end
 
     BRIEF --> AGENT
@@ -57,23 +57,25 @@ flowchart TB
     AGENT --> SKILL
     SKILL --> EXEC
     EXEC --> OUT
-    PERSONA -.-> WORKFLOW -.-> GATES
 ```
 
 ### How a campaign actually runs
 
 ```mermaid
 flowchart LR
-    P0["Phase 0<br/>Research<br/><i>client, competitors,<br/>geo + vertical playbooks</i>"]
-    P1["Phase 1<br/>Measurement<br/><i>pixel + CAPI, GA4,<br/>verify before spend</i>"]
-    P2["Phase 2<br/>Build<br/><i>campaigns + creatives,<br/>ALL PAUSED</i>"]
-    GATE{"🔒 Launch gate<br/><i>human approves<br/>budget & plan</i>"}
-    P4["Phase 4<br/>Run & optimize<br/><i>daily results pull,<br/>scale/kill by concept</i>"]
-    P5["Phase 5<br/>Report<br/><i>daily dashboard +<br/>weekly narrative</i>"]
+    P0["Phase 0: Research<br/>client, competitors,<br/>geo and vertical playbooks"]
+    P1["Phase 1: Measurement<br/>pixel, CAPI, GA4 -<br/>verify before spend"]
+    P2["Phase 2: Build<br/>campaigns and creatives,<br/>all paused"]
+    GATE{"Launch gate:<br/>human approves<br/>budget and plan"}
+    P4["Phase 4: Run and optimize<br/>daily results pull,<br/>scale or kill by concept"]
+    P5["Phase 5: Report<br/>daily dashboard,<br/>weekly narrative"]
 
-    P0 --> P1 --> P2 --> GATE
-    GATE -->|"approved"| P4 --> P5
-    P5 -->|"compound learnings"| P4
+    P0 --> P1
+    P1 --> P2
+    P2 --> GATE
+    GATE -->|approved| P4
+    P4 --> P5
+    P5 -->|learnings| P4
 ```
 
 ---

@@ -17,8 +17,8 @@ Two pieces work together:
 
 ```mermaid
 flowchart LR
-    A["Agent<br/><i>judgment + workflow + gates</i>"] -->|loads| S["Skill<br/><i>doctrine + frameworks + specs</i>"]
-    S --> E["Execution<br/><i>platform APIs / MCP / browser</i>"]
+    A["Agent:<br/>judgment, workflow, gates"] -->|loads| S["Skill:<br/>doctrine, frameworks, specs"]
+    S --> E["Execution:<br/>platform APIs, MCP, browser"]
 ```
 
 The agent's judgment is anchored in the masters — **Claude Hopkins** (advertising is
