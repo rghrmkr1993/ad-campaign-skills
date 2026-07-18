@@ -105,6 +105,8 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 | Platform AI internals | Meta Andromeda+GEM auction math, Google Ad Rank/Smart Bidding signals, steering doctrine, 8 secondary platforms (Microsoft/LinkedIn/Pinterest/Snap/Reddit/Amazon/X/TikTok) | [references/platform-ai-internals.md](references/platform-ai-internals.md) |
 | Measurement science | Metric definitions, 9 attribution models incl. Markov/Shapley/incrementality, experiment designs (geo, lift, holdouts), forecasting/MMM honesty | [references/measurement-science.md](references/measurement-science.md) |
 | Optimization & automation | Budget portfolio logic, bidding selection tree, creative bandit rotation, scale/kill thresholds, lifecycle automation, ecommerce intelligence | [references/optimization-automation.md](references/optimization-automation.md) |
+| Strategy frameworks (v2.2) | GTM 5-step, ABM tiers (1:1/1:few/1:many), PLG + growth loops, business-model mechanics, customer intelligence (personas/RFM/cohorts/health scores/VoC) | [references/strategy-frameworks.md](references/strategy-frameworks.md) |
+| Enterprise MarTech (v2.2) | Stack blueprint by client size (CDP/CRM/consent/identity), event-tracking architecture, programmatic (DSP/RTB/PMP/CTV), retail media, CRO deep-dive | [references/enterprise-martech.md](references/enterprise-martech.md) |
 
 ## Standard engagement workflow (new client)
 

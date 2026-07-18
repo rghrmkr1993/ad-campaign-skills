@@ -1,5 +1,29 @@
 # Changelog
 
+## 2.2.0 — 2026-07-19
+
+**Enterprise-grade expansion: strategy frameworks, MarTech architecture, full org-chart
+orchestration.**
+
+### Added
+- `references/strategy-frameworks.md` — Go-to-Market 5-step framework, Account-Based
+  Marketing tiers (1:1 / 1:few / 1:many with air-cover + ground-game doctrine),
+  Product-Led Growth and growth loops (viral/content/paid/data), business-model mechanics
+  table (B2C impulse → enterprise ABM → marketplace), and customer intelligence (persona
+  generation with verbatim-quote rule, segmentation schemes, cohort analysis, health
+  scores, identity resolution, Voice-of-Customer mining).
+- `references/enterprise-martech.md` — MarTech stack blueprint sized by client tier
+  (tag/analytics/CRM/CDP/consent layers; CRM vs CDP vs DMP distinctions), event-tracking
+  architecture rules, programmatic advertising plumbing (DSP → exchange/OpenRTB → SSP,
+  PMP, header bidding, contextual, CTV, when-it's-worth-it thresholds), retail media
+  (Amazon, Walmart Connect, Flipkart, Shopify Audiences), analytics tool map, and a CRO
+  deep-dive (research stack, ICE prioritization, LP/form/checkout/offer test playbook).
+- Agent orchestrator expanded to the full enterprise org chart (GTM/ABM strategy, customer
+  intelligence, MarTech architecture, programmatic & retail media, CRO, social/influencer,
+  continuous learning) and **advanced reasoning techniques** (ReAct, tree-of-thought for
+  irreversible calls, self-critique, retrieval-before-reasoning, long-term client-playbook
+  memory, parallel decomposition).
+
 ## 2.1.1 — 2026-07-19
 
 ### Added

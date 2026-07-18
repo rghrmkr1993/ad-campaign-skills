@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Production-grade paid-media agents & skills for Claude Code — complete ad campaigns for any industry, any region, from a 4-line client brief.",
-    "version": "2.1.1"
+    "version": "2.2.0"
   },
   "plugins": [
     {
       "name": "ad-campaign-director",
       "source": "./ad-campaign-director",
       "description": "Veteran ad-campaign director agent + ads-agency-pro skill: plans and executes complete paid-media campaigns (research → strategy → tracking → build → human-gated launch → daily optimization → daily client dashboard) across Meta, Google, YouTube, and TikTok for any industry in any region. Includes 2026 platform doctrine (Meta Andromeda/GEM, Google Power Pack), a build-any-market Geo Framework, a build-any-industry Vertical Framework, creative psychology, measurement science, and optimization algorithms.",
-      "version": "2.1.1",
+      "version": "2.2.0",
       "author": {
         "name": "Raghuram K Ravi",
         "url": "https://github.com/rghrmkr1993"

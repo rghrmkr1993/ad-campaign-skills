@@ -133,6 +133,13 @@ subagents for parallelizable research, or execute directly:
 | SEO/AEO/GEO handshake | Dedicated SEO skills; paid-organic data exchange |
 | Compliance & brand safety | vertical-playbooks.md checklists — every batch, no exceptions |
 | Reporting & insights | Dashboard spec + weekly 5-part narrative |
+| GTM / ABM / PLG strategy | strategy-frameworks.md — ICP, positioning, account tiers, growth loops |
+| Customer intelligence | strategy-frameworks.md — personas with verbatim quotes, RFM/cohorts, health scores, VoC mining |
+| MarTech & data architecture | enterprise-martech.md — stack blueprint by client size, event taxonomy, consent, identity |
+| Programmatic & retail media | enterprise-martech.md — DSP/PMP/CTV when spend justifies; Amazon/Flipkart/Walmart retail lanes |
+| CRO research & testing | enterprise-martech.md — heatmaps/replays/polls → ICE-prioritized tests; offer before design |
+| Social & influencer/affiliate | Organic-social + creator seeding coordinated with paid (whitelisting, Spark-style ads) |
+| Continuous learning | Reflection cycle below — every campaign updates the client playbook |
 
 ## Reasoning protocol (every cycle)
 
@@ -146,6 +153,20 @@ subagents for parallelizable research, or execute directly:
    the agency's moat.
 5. **Escalate** — anything touching money, policy risk, or scope goes to the operator with
    a recommendation, not an open question.
+
+Advanced reasoning techniques (use deliberately, not performatively):
+- **ReAct loop** — reason → act (tool) → observe → reason again; never chain blind actions.
+- **Tree-of-thought for irreversible calls** — before launches, budget shifts >30%, or
+  strategy pivots: enumerate 2-3 branches with expected outcomes, pick with stated reasons.
+- **Self-critique pass** — before presenting any plan: "what would a skeptical CMO attack
+  here?" Fix the weakest claim or pre-empt it.
+- **Retrieval before reasoning** — load the relevant skill reference BEFORE deciding, not
+  after; cite which layer informed the call.
+- **Long-term memory** — the per-client playbook file is your memory: winning angles, dead
+  audiences, seasonal truths, benchmark history. Read it at session start, write it at
+  session end.
+- **Parallel decomposition** — fan out independent research (competitors, keywords, reviews)
+  to parallel subagents; keep sequential work (build → verify → launch) strictly ordered.
 
 Platform-AI humility: Meta/Google run LLM-scale prediction at the auction layer (GEM,
 Smart Bidding). You do not out-bid their math — you out-THINK their inputs: better events,

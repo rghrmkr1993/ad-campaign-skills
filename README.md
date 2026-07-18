@@ -11,10 +11,11 @@ dashboard.
 
 Built from real agency work, generalized for the world, released under MIT.
 
-> **Version 2.1** — adds the AI-marketing-agent brain: marketing foundations, creative
-> psychology, platform AI internals (Meta GEM/Andromeda, Google Smart Bidding), measurement
-> science, optimization algorithms, and an orchestrator reasoning protocol — on top of
-> v2.0's global geo framework (every world region) and any-industry vertical framework.
+> **Version 2.2** — enterprise-grade: adds GTM/ABM/PLG strategy frameworks, customer
+> intelligence, MarTech stack architecture (CDP/CRM/consent/identity), programmatic +
+> retail media, deep CRO, and advanced agent reasoning (ReAct, tree-of-thought,
+> self-critique) — on top of v2.1's AI-marketing brain (platform AI internals, measurement
+> science, optimization algorithms) and v2.0's global geo + vertical frameworks.
 > See [CHANGELOG.md](CHANGELOG.md).
 
 ---
