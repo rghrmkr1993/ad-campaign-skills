@@ -96,6 +96,16 @@ Keep this table updated with YOUR accounts. Verify the right account before ever
 - **Four worked examples at full depth** — skincare/beauty (compliance-heavy), fashion
   (benchmark-driven), film/entertainment (phase-gated), tech (B2B + consumer).
 
+## Knowledge layers (v2.1 — the AI-marketing-agent brain)
+
+| Layer | Contents | File |
+|---|---|---|
+| Foundations | 28 marketing disciplines map, journey models (AIDA/TOFU/Flywheel/AARRR/RACE/See-Think-Do-Care), objective-selection matrix | [references/marketing-foundations.md](references/marketing-foundations.md) |
+| Creative & psychology | 10-point creative scoring rubric, 12 copywriting frameworks, Cialdini + cognitive-bias application with ethical lines | [references/creative-psychology.md](references/creative-psychology.md) |
+| Platform AI internals | Meta Andromeda+GEM auction math, Google Ad Rank/Smart Bidding signals, steering doctrine, 8 secondary platforms (Microsoft/LinkedIn/Pinterest/Snap/Reddit/Amazon/X/TikTok) | [references/platform-ai-internals.md](references/platform-ai-internals.md) |
+| Measurement science | Metric definitions, 9 attribution models incl. Markov/Shapley/incrementality, experiment designs (geo, lift, holdouts), forecasting/MMM honesty | [references/measurement-science.md](references/measurement-science.md) |
+| Optimization & automation | Budget portfolio logic, bidding selection tree, creative bandit rotation, scale/kill thresholds, lifecycle automation, ecommerce intelligence | [references/optimization-automation.md](references/optimization-automation.md) |
+
 ## Standard engagement workflow (new client)
 
 1. **Intake** — business goal, AOV/LTV, margins, target ROAS/CPA ceiling, geo list, languages,

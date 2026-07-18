@@ -11,8 +11,11 @@ dashboard.
 
 Built from real agency work, generalized for the world, released under MIT.
 
-> **Version 2.0** — global geo framework (every world region), any-industry vertical
-> framework (12+ industries), architecture docs. See [CHANGELOG.md](CHANGELOG.md).
+> **Version 2.1** — adds the AI-marketing-agent brain: marketing foundations, creative
+> psychology, platform AI internals (Meta GEM/Andromeda, Google Smart Bidding), measurement
+> science, optimization algorithms, and an orchestrator reasoning protocol — on top of
+> v2.0's global geo framework (every world region) and any-industry vertical framework.
+> See [CHANGELOG.md](CHANGELOG.md).
 
 ---
 
@@ -94,7 +97,12 @@ ad-campaign-director/
             ├── platforms-2026.md            # Meta Andromeda, Google Power Pack, YouTube, TikTok
             ├── geo-playbooks.md             # Geo Framework + all world regions + 6 worked examples
             ├── vertical-playbooks.md        # Vertical Framework + 12 industries + 4 worked examples
-            └── client-dashboard-spec.md     # Daily client dashboard: layout, metrics, narrative
+            ├── client-dashboard-spec.md     # Daily client dashboard: layout, metrics, narrative
+            ├── marketing-foundations.md     # 28 disciplines, journey models, objective matrix
+            ├── creative-psychology.md       # Creative rubric, 12 copy frameworks, psychology
+            ├── platform-ai-internals.md     # Meta GEM/Andromeda + Google auction math, 8 more platforms
+            ├── measurement-science.md       # Attribution (incl. Markov/Shapley), experiments, MMM
+            └── optimization-automation.md   # Budget/bid algorithms, creative bandit, lifecycle, ecom
 ```
 
 ## Why this exists

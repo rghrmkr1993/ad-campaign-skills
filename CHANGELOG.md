@@ -1,5 +1,29 @@
 # Changelog
 
+## 2.1.0 — 2026-07-19
+
+**The AI-marketing-agent brain: five new knowledge layers + orchestrator architecture.**
+
+### Added
+- `references/marketing-foundations.md` — 28-discipline map, customer-journey models
+  (AIDA, TOFU/MOFU/BOFU, Flywheel, AARRR, See-Think-Do-Care, RACE), objective-selection
+  matrix (the objective IS the instruction to platform AI).
+- `references/creative-psychology.md` — 10-point creative scoring rubric, 12 copywriting
+  frameworks (PAS, BAB, FAB, 4P, QUEST, StoryBrand, PASTOR…), Cialdini principles +
+  cognitive biases with application rules and explicit ethical lines.
+- `references/platform-ai-internals.md` — how Meta (Andromeda retrieval + GEM ranking,
+  auction Total Value math) and Google (Ad Rank, Smart Bidding auction-time signals)
+  actually decide, the steering doctrine that follows, and objective maps for 8 secondary
+  platforms (Microsoft, LinkedIn, TikTok, Pinterest, Snapchat, Reddit, Amazon, X).
+- `references/measurement-science.md` — metric health logic, 9 attribution models
+  (first/last/linear/time-decay/position/DDA/Markov/Shapley/incrementality), experiment
+  designs (A/B, Bayesian, geo, lift, holdouts, budget stair-steps), honest forecasting/MMM.
+- `references/optimization-automation.md` — the agent's own decision algorithms: marginal
+  budget allocation, explore/exploit splits, bidding selection tree, creative-bandit
+  rotation, scale/kill thresholds, lifecycle automation, ecommerce feed intelligence.
+- Agent: **Orchestrator model** (enterprise sub-agent functions mapped to real execution)
+  and **Reasoning protocol** (plan → act → measure → reflect → escalate).
+
 ## 2.0.0 — 2026-07-18
 
 **Global generalization + architecture docs. Repo renamed to `ad-campaign-skills`.**
