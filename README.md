@@ -29,18 +29,21 @@ flowchart TB
         APPROVE["Approvals:<br/>launch and budget changes"]
     end
 
-    subgraph AGENT["ad-campaign-director agent"]
+    subgraph AGENT["ad-campaign-director agent - the orchestrator"]
         PERSONA["Veteran persona:<br/>Hopkins, Ogilvy, 2026 doctrine"]
-        WORKFLOW["Six-phase engagement workflow"]
+        WORKFLOW["Six-phase engagement workflow<br/>plus enterprise org-chart functions"]
+        REASON["Reasoning: ReAct loops,<br/>tree-of-thought, self-critique,<br/>client-playbook memory"]
         GATES["Hard gates:<br/>no spend without approval,<br/>no billing access,<br/>compliance pass required"]
     end
 
-    subgraph SKILL["ads-agency-pro skill"]
+    subgraph SKILL["ads-agency-pro skill - 11 knowledge layers"]
         DOCTRINE["Core doctrine:<br/>7 platform-agnostic rules"]
-        PLATFORMS["Platform playbooks:<br/>Meta Andromeda, Google Power Pack,<br/>YouTube, TikTok Smart+ and GMV Max"]
-        GEO["Geo Framework:<br/>7 questions for any market,<br/>9 regional guides, 6 worked examples"]
-        VERTICAL["Vertical Framework:<br/>6 questions for any industry,<br/>12 industry guides, 4 worked examples"]
-        DASH["Dashboard spec:<br/>daily client reporting"]
+        PLATFORMS["Platform playbooks + AI internals:<br/>Meta Andromeda and GEM, Google Power Pack,<br/>YouTube, TikTok, 8 secondary platforms"]
+        GEO["Geo Framework: any market<br/>Vertical Framework: any industry"]
+        STRAT["Strategy frameworks:<br/>GTM, ABM, PLG, growth loops,<br/>customer intelligence"]
+        BRAIN["Creative psychology,<br/>measurement science,<br/>optimization algorithms"]
+        TECH["Enterprise MarTech:<br/>stack blueprints, programmatic,<br/>retail media, CRO"]
+        DASH["Dashboard and reporting spec"]
     end
 
     subgraph EXEC["Execution surfaces"]
@@ -103,7 +106,9 @@ ad-campaign-director/
             ├── creative-psychology.md       # Creative rubric, 12 copy frameworks, psychology
             ├── platform-ai-internals.md     # Meta GEM/Andromeda + Google auction math, 8 more platforms
             ├── measurement-science.md       # Attribution (incl. Markov/Shapley), experiments, MMM
-            └── optimization-automation.md   # Budget/bid algorithms, creative bandit, lifecycle, ecom
+            ├── optimization-automation.md   # Budget/bid algorithms, creative bandit, lifecycle, ecom
+            ├── strategy-frameworks.md       # GTM, ABM tiers, PLG/growth loops, customer intelligence
+            └── enterprise-martech.md        # Stack blueprints, programmatic, retail media, CRO
 ```
 
 ## Why this exists

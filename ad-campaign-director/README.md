@@ -80,6 +80,21 @@ both reporting models — results-focused (fixed-fee contracts) and full-transpa
 (pass-through media) — **the contract always wins**, and the operator always keeps a full
 internal economics view.
 
+### 6. The AI-marketing brain (v2.1)
+`marketing-foundations.md` (28 disciplines, journey models, objective-selection matrix) •
+`creative-psychology.md` (scoring rubric, 12 copywriting frameworks, persuasion ethics) •
+`platform-ai-internals.md` (Meta Andromeda + GEM auction math, Google Ad Rank and Smart
+Bidding signals, 8 secondary platforms) • `measurement-science.md` (9 attribution models,
+experiment designs, honest forecasting) • `optimization-automation.md` (budget/bid
+decisioning, creative-bandit rotation, scale/kill thresholds, lifecycle automation,
+ecommerce intelligence).
+
+### 7. Strategy + enterprise MarTech (v2.2)
+`strategy-frameworks.md` (Go-to-Market 5-step, ABM tiers, PLG and growth loops,
+business-model mechanics, customer intelligence) • `enterprise-martech.md` (MarTech stack
+blueprints by client size, event-tracking architecture, programmatic plumbing
+DSP/RTB/PMP/CTV, retail media, CRO deep-dive).
+
 ## Install
 
 See the [root README](../README.md#install). Short version: copy
