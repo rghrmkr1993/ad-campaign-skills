@@ -1,8 +1,8 @@
-# Ad Campaign Director — Agent + Skill (Detailed Docs)
+# Ad Campaign Director, Agent + Skill (Detailed Docs)
 
 The flagship agent of [Ad-Campaign Skills](../README.md): a veteran paid-media **campaign
 director** for Claude Code that runs complete client campaigns on **Meta, Google, YouTube,
-and TikTok** — for **any industry, in any region of the world**.
+and TikTok**, for **any industry, in any region of the world**.
 
 ---
 
@@ -21,9 +21,9 @@ flowchart LR
     S --> E["Execution:<br/>platform APIs, MCP, browser"]
 ```
 
-The agent's judgment is anchored in the masters — **Claude Hopkins** (advertising is
+The agent's judgment is anchored in the masters, **Claude Hopkins** (advertising is
 measured salesmanship; test everything; the customer is selfish) and **David Ogilvy** (the
-hook is 80% of the ad; respect the consumer; kill campaigns on data, not boredom) — fused
+hook is 80% of the ad; respect the consumer; kill campaigns on data, not boredom), fused
 with **2026 platform reality** (creative-based retrieval, consolidated structures, signal
 quality, learning windows).
 
@@ -31,12 +31,12 @@ quality, learning windows).
 
 | Phase | What happens | Spend? |
 |---|---|---|
-| 0 — Research | Client footprint, competitor ad libraries (Meta Ads Library, Google Transparency Center), geo playbook via the Geo Framework, vertical playbook via the Vertical Framework, strategy brief with benchmark-cited targets | No |
-| 1 — Measurement | Pixel + Conversions API, Google tag + enhanced conversions, GA4, feed health. Test events verified end-to-end. **No tracking = no launch** | No |
-| 2 — Build | Campaign structures (consolidated, broad, language-split), 10-15 creative concepts, compliance pass for regulated verticals. **Everything created PAUSED** | No |
-| 3 — Launch gate | Launch summary presented: structure, daily budgets, flight dates, creatives, targets. Activates only on explicit approval | 🔒 Gated |
-| 4 — Run & optimize | Daily results pull + dashboard update; scale winners +20-30% steps; kill losing *concepts* (not variations); 25-30% creative refresh every 2 weeks; no panic moves inside the 7-10 day learning window | Yes (approved) |
-| 5 — Report | Daily client dashboard + weekly 5-part narrative report (90-second executive summary → KPI scorecard → cause-and-effect → insights → next actions) | — |
+| 0: Research | Client footprint, competitor ad libraries (Meta Ads Library, Google Transparency Center), geo playbook via the Geo Framework, vertical playbook via the Vertical Framework, strategy brief with benchmark-cited targets | No |
+| 1: Measurement | Pixel + Conversions API, Google tag + enhanced conversions, GA4, feed health. Test events verified end-to-end. **No tracking = no launch** | No |
+| 2: Build | Campaign structures (consolidated, broad, language-split), 10-15 creative concepts, compliance pass for regulated verticals. **Everything created PAUSED** | No |
+| 3: Launch gate | Launch summary presented: structure, daily budgets, flight dates, creatives, targets. Activates only on explicit approval | 🔒 Gated |
+| 4, Run & optimize | Daily results pull + dashboard update; scale winners +20-30% steps; kill losing *concepts* (not variations); 25-30% creative refresh every 2 weeks; no panic moves inside the 7-10 day learning window | Yes (approved) |
+| 5: Report | Daily client dashboard + weekly 5-part narrative report (90-second executive summary → KPI scorecard → cause-and-effect → insights → next actions) | |
 
 ## What the skill contains
 
@@ -47,7 +47,7 @@ narrow • signal quality is the moat • video-first • patience windows.
 ### 2. Platform playbooks (`references/platforms-2026.md`)
 - **Meta:** Andromeda mechanics (creative-based ad retrieval, Entity-ID collapse),
   Advantage+ Shopping as primary, EMQ ≥ 7, fatigue math.
-- **Google:** the Power Pack — Performance Max + AI Max for Search + Demand Gen with budget
+- **Google:** the Power Pack, Performance Max + AI Max for Search + Demand Gen with budget
   splits per business type, Demand Gen's four official best-practice pillars.
 - **YouTube:** three surfaces (in-stream / Shorts / CTV) with per-surface creative rules
   and CPM bands.
@@ -76,8 +76,8 @@ film/entertainment, tech).
 A daily client dashboard designed around the 5-second rule (*is it working?* answered
 instantly): hero verdict tiles, trend charts titled as findings, funnel, creative
 leaderboard, geo/language splits, and a "what we did / what's next" narrative. Supports
-both reporting models — results-focused (fixed-fee contracts) and full-transparency
-(pass-through media) — **the contract always wins**, and the operator always keeps a full
+both reporting models, results-focused (fixed-fee contracts) and full-transparency
+(pass-through media), **the contract always wins**, and the operator always keeps a full
 internal economics view.
 
 ### 6. The AI-marketing brain (v2.1)
@@ -130,13 +130,13 @@ raises, and fund additions each require explicit approval with a presented diff.
 Google via browser automation or API, TikTok via browser. More connectors = less browser
 driving.
 
-**My market/industry isn't in the examples.** That's the point of v2.0 — run the 7-question
+**My market/industry isn't in the examples.** That's the point of v2.0, run the 7-question
 Geo Framework and 6-question Vertical Framework; the worked examples show the depth to aim
 for.
 
-**Are the benchmarks guaranteed?** No — they're research-dated (July 2026) category medians
+**Are the benchmarks guaranteed?** No, they're research-dated (July 2026) category medians
 for expectation-setting. Your account's data supersedes them within weeks.
 
 **Can I use this for restricted categories (finance, health, housing)?** Yes, but the
-frameworks will force compliance checks, and you should get professional review — platform
+frameworks will force compliance checks, and you should get professional review, platform
 special-category rules and local law apply to you, not to this repo.

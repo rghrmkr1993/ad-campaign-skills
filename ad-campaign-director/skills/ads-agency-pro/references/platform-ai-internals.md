@@ -1,21 +1,28 @@
-# Platform AI Internals — How the Machines Decide (and how to feed them)
+# Platform AI Internals: How the Machines Decide (and how to feed them)
 
 Understanding WHY the platforms behave as they do turns knob-twiddling into engineering.
 Formulas below are conceptual/approximate (platforms don't publish exact math). Research-
-dated July 2026.
+dated July 2026 (Meta/Google items revised October 2026).
 
-## Meta — the 2026 AI stack
+## Meta, the 2026 AI stack
 
 **Architecture:** Advertiser goal → campaign objective → Advantage+ AI → audience expansion
 → real-time auction → prediction models → ad ranking → delivery optimization → continuous
 learning.
 
 **Two brains:**
-- **Andromeda** — the retrieval engine: picks which ads even enter ranking, keyed on
+- **Andromeda**: the retrieval engine: picks which ads even enter ranking, keyed on
   creative signal (Entity IDs). Why concept diversity matters.
-- **GEM (Generative Ads Recommendation Model)** — the LLM-scale ranking brain (launched
-  late 2025): trained across thousands of GPUs, transformer-based user modeling. Meta
-  reported ~+5% Instagram / +3% FB Feed conversions from GEM alone.
+- **GEM (Generative Ads Recommendation Model)**: the LLM-scale ranking brain (announced and
+  rolled out through 2025; sources vary between March, Q2 and a November paper, so no single
+  date is reliable): trained across thousands of GPUs, transformer-based user modeling. Meta
+  reported ~+5% Instagram / +3% FB Feed conversions from GEM alone. Andromeda completed
+  rollout around October 2025.
+- **Generative Recommender**: [F] Meta disclosed (earnings call, 2026) a further LLM-based
+  ranking/matching layer alongside GEM and Andromeda. Practical implication is unchanged:
+  creative supply and signal quality are the levers, not bid micro-management.
+- [E] Ad-fatigue window of 2-3 weeks (see platforms-2026.md) is practitioner consensus, not
+  an official Meta figure; high-spend accounts report faster fatigue.
 - Supporting models: DNNs, multi-task learning, CTR/CVR/value prediction, large embeddings,
   graph neural networks (social graph), reinforcement learning, AutoML.
 
@@ -27,7 +34,7 @@ Total Value ≈ (Advertiser Bid × Estimated Action Rate) + User Value − Negat
   purchase, lead…) for THIS user.
 - User Value / quality = predicted positive experience; Negative Feedback (hide/report
   rates) directly taxes delivery.
-- Highest Total Value wins — a better-predicted ad beats a higher bid.
+- Highest Total Value wins, a better-predicted ad beats a higher bid.
 
 **Practical levers this implies:**
 1. Raise Estimated Action Rate → better creative-audience fit, stronger hooks, cleaner
@@ -38,10 +45,10 @@ Total Value ≈ (Advertiser Bid × Estimated Action Rate) + User Value − Negat
    learning phase (~50 events/week per ad set) before judging.
 4. Advantage+ suite (Shopping, Audience, Placements, Creative, Catalog) = giving the two
    brains maximum freedom; constrain only with reason (brand safety, compliance).
-5. DCO/Advantage+ Creative reassembles your assets — supply modular assets that survive
+5. DCO/Advantage+ Creative reassembles your assets, supply modular assets that survive
    recombination.
 
-## Google — the 2026 AI stack
+## Google, the 2026 AI stack
 
 **Architecture:** Business goal → campaign → PMax/AI Max → auction-time AI → intent
 prediction → real-time bid → Ad Rank → serving → learning loop. Gemini-powered LLMs for
@@ -52,7 +59,7 @@ models.
 ```
 Ad Rank ≈ Bid × Quality (Expected CTR × Ad Relevance × Landing Page Experience) + asset/context factors
 ```
-Quality multiplies bid — a 2x-better ad can beat a 2x-higher bidder. Landing page
+Quality multiplies bid, a 2x-better ad can beat a 2x-higher bidder. Landing page
 experience is IN the formula: LP work is ad work.
 
 **Smart Bidding** (tCPA, tROAS, Max Conversions, Max Conversion Value) bids per-auction
@@ -70,16 +77,16 @@ Center feed, conversion history, Customer Match lists.
    goal, tighten in steps), not from wishes. Too-aggressive targets strangle volume.
 4. Give PMax full asset coverage (text+image+video) or it under-serves surfaces; use AI
    Max with text guidelines + pinned headlines + negatives as guardrails.
-5. Audience signals in PMax are hints, not limits — seed with buyers, not broad interests.
+5. Audience signals in PMax are hints, not limits, seed with buyers, not broad interests.
 
 ## Steering doctrine (both platforms)
 
 The platforms run the microseconds (auction, bid, per-user prediction). You run the
 macro-inputs: objective/event choice, signal quality, creative supply, budget structure,
 guardrails, measurement truth. Never fight the machine at its own layer (manual bid
-micro-management, hyper-segmentation) — improve its inputs instead.
+micro-management, hyper-segmentation), improve its inputs instead.
 
-## Secondary platforms — quick objective map
+## Secondary platforms, quick objective map
 
 | Platform | Formats | Wins for | Notes |
 |---|---|---|---|
@@ -94,4 +101,4 @@ micro-management, hyper-segmentation) — improve its inputs instead.
 
 Budget rule: master Meta+Google first (80%+ of most SMB/mid-market results), add
 secondaries only with a specific job (LinkedIn for B2B ABM, Amazon for marketplace share,
-Snapchat for GCC youth) — never for coverage vanity.
+Snapchat for GCC youth), never for coverage vanity.

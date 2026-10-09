@@ -1,13 +1,13 @@
-# Vertical Playbooks — Any Industry
+# Vertical Playbooks: Any Industry
 
 This file has three parts:
-1. **The Vertical Framework** — a repeatable method to build a playbook for ANY industry.
-2. **Industry quick guides** — starting points for 12 common verticals.
-3. **Worked examples** — four fully-built vertical playbooks showing the target depth.
+1. **The Vertical Framework**: a repeatable method to build a playbook for ANY industry.
+2. **Industry quick guides**: starting points for 12 common verticals.
+3. **Worked examples**: four fully-built vertical playbooks showing the target depth.
 
 ---
 
-# Part 1 — The Vertical Framework (use for any industry)
+# Part 1: The Vertical Framework (use for any industry)
 
 Answer these six questions for a new vertical. The answers ARE the playbook.
 
@@ -44,8 +44,7 @@ Answer these six questions for a new vertical. The answers ARE the playbook.
 - Lead gen: lead quality feedback loop (offline conversion import; optimize to qualified,
   not raw leads).
 - App: event optimization (activation, not install).
-- Offline/footfall: call tracking, store visits, promo codes, ticketing click-outs —
-  set attribution expectations honestly (directional, not deterministic).
+- Offline/footfall: call tracking, store visits, promo codes, ticketing click-outs, set attribution expectations honestly (directional, not deterministic).
 
 ## 6. Seasonality & demand rhythm
 - Category peaks (gifting seasons, enrollment windows, weather-driven, event-driven)?
@@ -54,7 +53,7 @@ Answer these six questions for a new vertical. The answers ARE the playbook.
 
 ---
 
-# Part 2 — Industry quick guides
+# Part 2: Industry quick guides
 
 ## Food & Beverage / Restaurants
 Appetite appeal is the whole game: close-up food shots, sizzle/steam motion, <15s. Local
@@ -77,7 +76,7 @@ funnels. Long windows; optimize to funded/approved accounts via offline import.
 ## Real Estate
 Housing = special category in the US (no age/gender/zip discrimination). Lead gen with
 instant forms + WhatsApp works globally; virtual tours/walkthrough video outperform
-stills. Geo-farming: radius + income proxies where allowed. Long cycle — nurture sequences
+stills. Geo-farming: radius + income proxies where allowed. Long cycle, nurture sequences
 and remarketing pools matter more than first-click CPA.
 
 ## Education & Courses
@@ -109,7 +108,7 @@ comparison creative; niche targeting is a legitimate exception to broad-audience
 
 ## Local Services (salons, repair, clinics, gyms)
 Radius targeting + click-to-call + WhatsApp booking; Google Local Services Ads where
-available. Reviews are the conversion engine — feed review velocity. Budget small, creative
+available. Reviews are the conversion engine, feed review velocity. Budget small, creative
 simple, dayparting to open hours.
 
 ## Luxury & Jewelry
@@ -125,11 +124,11 @@ markets). Comparison and unboxing UGC strong; watch warranty/claims wording.
 
 ---
 
-# Part 3 — Worked examples (full-depth playbooks)
+# Part 3: Worked examples (full-depth playbooks)
 
 ## Worked example: Skincare / Beauty
 
-**Compliance first — this vertical gets ad accounts banned.**
+**Compliance first, this vertical gets ad accounts banned.**
 
 Claims language (Meta + Google + ASCI/ASA aligned):
 - BANNED framing: "treats/cures acne/eczema/psoriasis/rosacea", disease/medical claims,
@@ -140,28 +139,36 @@ Claims language (Meta + Google + ASCI/ASA aligned):
   "dermatologically tested" (with test on file), sensory language.
 - India ASCI: 500+ beauty brands flagged 2025-26 for exaggerated claims, misleading
   "natural"/"Ayurvedic" use, and missing influencer disclosure. Influencer statements =
-  brand claims — the brand answers for them.
+  brand claims, the brand answers for them.
 - UK ASA: filters must not exaggerate product effect; efficacy claims need substantiation.
 - Cosmetic vs drug line: the moment a claim is therapeutic, it becomes a drug claim in most
   jurisdictions. Stay cosmetic.
+- [F] Ad review is increasingly multimodal: image, text and landing page are assessed
+  together, so a compliant ad can still be rejected over an LP claim or a visual implying
+  results. Audit all three as one unit.
+- [F] AI-generated creative may require disclosure in some jurisdictions: check per market
+  (and per platform label rules) before launch; keep a record of which assets were AI-made.
 
 **Strategy:**
 - UGC-led: creator testimonials, texture/application ASMR, GRWM formats, derm-adjacent
   authority content. UGC ≈ 24% higher ROAS, ~47% lower CPM vs studio creative.
 - Advantage+ Shopping primary + catalog for range sellers; hero-SKU campaigns for the
   flagship.
-- Ingredient education works (actives, heritage ingredients) — pair ingredient + proof point.
+- Ingredient education works (actives, heritage ingredients), pair ingredient + proof point.
 - Routine-based bundling lifts AOV; subscription push in mature markets.
 
 ## Worked example: Clothing / Fashion
 
-**2026 Meta benchmarks (fashion/apparel):** median ROAS 2.18x; good = 2.2-3.0x; top quartile
-4.4x; top decile 6.0x. Judge against these, not vanity targets.
+**2026 Meta benchmarks (fashion/apparel):** [E] median ROAS roughly 2.2x to 3.2x depending
+on source (no single figure is reliable); top decile materially higher. Judge against the
+account's own history and margin, not vanity targets. Caveat: apparel returns of 20-30% cut
+realised ROAS below platform-reported ROAS, so net out returns before comparing to any
+benchmark.
 
 **Structure:**
 - 70% budget: catalog-based Advantage+ Shopping on the full catalog (~4.52x vs 3.70x manual).
 - 30% budget: hero-product / drop campaigns (new collections, seasonal stories).
-- Catalog retargeting ~4.7x vs ~3.1x prospecting — feed health (images, titles,
+- Catalog retargeting ~4.7x vs ~3.1x prospecting, feed health (images, titles,
   availability, price sync) is a weekly check.
 
 **Creative engine:**
@@ -177,15 +184,15 @@ Claims language (Meta + Google + ASCI/ASA aligned):
 ## Worked example: Film / Entertainment
 
 **Phase-gated campaign arc:**
-1. **Announcement/title reveal** — poster day; fan amplification; search/knowledge-panel
+1. **Announcement/title reveal**: poster day; fan amplification; search/knowledge-panel
    hygiene.
-2. **Music-first** (where the industry works that way, e.g., Indian cinema) — single launch
+2. **Music-first** (where the industry works that way, e.g., Indian cinema), single launch
    as its own campaign event; audio seeding on Reels/Shorts/TikTok so the sound trends.
-3. **Teaser → Trailer** — trailer launch as live event; vertical cutdowns; meme-page seeding
+3. **Teaser → Trailer**: trailer launch as live event; vertical cutdowns; meme-page seeding
    within hours (supply meme-able frames/dialogues deliberately).
-4. **Release week** — opening-day energy content, booking-intent search campaigns
+4. **Release week**: opening-day energy content, booking-intent search campaigns
    ("<title> tickets" + ticketing deep links), creator review seeding, city-level geo pushes.
-5. **Sustain/streaming window** — dialogue clips, BTS; streaming-release re-launch campaign
+5. **Sustain/streaming window**: dialogue clips, BTS; streaming-release re-launch campaign
    with platform co-marketing.
 
 **Mix (adjust per market):** YouTube 40-50% (trailer + Shorts), Meta 35-45% (Reels, memes,
@@ -194,13 +201,13 @@ available (NOT India).
 
 **Craft:** every asset vertical-first; hook = star/dialogue/music in <2s; language-split
 everything (each dub is a separate campaign with separate audiences); box-office attribution
-is directional — set that expectation with producers upfront.
+is directional, set that expectation with producers upfront.
 
 ## Worked example: Tech (SaaS / consumer tech / apps)
 
 **B2B SaaS:** Search + AI Max 40-50% (intent capture), Demand Gen + YouTube 20-30%, Meta
 20-30% (retargeting, founder-led content, case studies). Offline conversion import (CRM
-stage changes) is the single biggest lever — optimize toward SQL/opportunity, not raw leads.
+stage changes) is the single biggest lever, optimize toward SQL/opportunity, not raw leads.
 Consent language per geo (GDPR/DPDP/PDPA). Judge on 30-90 day pipeline cohorts.
 
 **Consumer tech / apps:** App campaigns with event optimization on activation, not install.

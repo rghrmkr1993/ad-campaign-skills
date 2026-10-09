@@ -1,4 +1,4 @@
-# Marketing Foundations — Disciplines, Journeys, Objectives
+# Marketing Foundations: Disciplines, Journeys, Objectives
 
 The strategy-selection layer: which discipline, which journey model, which objective. Wrong
 objective = the platform's AI optimizes for the wrong thing; everything downstream fails.
@@ -7,16 +7,16 @@ objective = the platform's AI optimizes for the wrong thing; everything downstre
 
 | Cluster | Disciplines | Leads when |
 |---|---|---|
-| Strategy core | Marketing strategy, digital, performance, brand, product, growth, revenue marketing | Always on — performance vs brand split is the first budget decision |
+| Strategy core | Marketing strategy, digital, performance, brand, product, growth, revenue marketing | Always on, performance vs brand split is the first budget decision |
 | Demand engine | Demand gen, customer acquisition, inbound, outbound, content, video | New-customer growth targets; long-cycle B2B leans inbound+demand gen |
-| Relationship engine | Retention, lifecycle, email, SMS, WhatsApp, community, referral | LTV problems, repeat-purchase categories; cheaper than acquisition — check this FIRST when a client asks for "more sales" |
-| Leverage plays | Affiliate, influencer, event, guerrilla, co-marketing | Multipliers on a working core funnel — never the core itself |
+| Relationship engine | Retention, lifecycle, email, SMS, WhatsApp, community, referral | LTV problems, repeat-purchase categories; cheaper than acquisition, check this FIRST when a client asks for "more sales" |
+| Leverage plays | Affiliate, influencer, event, guerrilla, co-marketing | Multipliers on a working core funnel, never the core itself |
 | Place-based | Local, hyperlocal, retail, omnichannel | Physical footprint, store visits, marketplace+D2C blends |
 
-Rule: paid media is ONE lever. Diagnose before media-planning — if retention/lifecycle is
+Rule: paid media is ONE lever. Diagnose before media-planning: if retention/lifecycle is
 broken, more acquisition spend pours water into a leaking bucket. Say so to the client.
 
-## Customer journey — canonical stages
+## Customer journey, canonical stages
 
 Awareness → Interest → Consideration → Intent → Conversion → Retention → Upsell →
 Cross-sell → Advocacy.
@@ -24,7 +24,7 @@ Cross-sell → Advocacy.
 Map every campaign to stages it serves. A media plan that only buys Conversion-stage
 audiences exhausts them; one that only buys Awareness never proves revenue.
 
-## Journey models — pick per engagement
+## Journey models, pick per engagement
 
 | Model | Structure | Use when |
 |---|---|---|
